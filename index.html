@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gotham Files | Batman</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LOADING -->
+    <div id="loading">
+        <div class="loading-content">
+            <div class="loading-logo">G</div>
+            <h2>GOTHAM FILES</h2>
+            <p>CARREGANDO ARQUIVOS...</p>
+
+            <div class="loading-bar">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <a href="#inicio" class="logo">
+            <span>G</span>
+            GOTHAM<span>FILES</span>
+        </a>
+
+        <nav>
+            <a href="#inicio">INÍCIO</a>
+            <a href="#personagens">PERSONAGENS</a>
+            <a href="#timeline">TIMELINE</a>
+            <a href="#filmes">FILMES</a>
+            <a href="#quiz">QUIZ</a>
+        </nav>
+
+        <button id="themeButton" class="theme-button">
+            ◐
+        </button>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+
+        <div class="hero-background"></div>
+
+        <div class="hero-content">
+
+            <span class="eyebrow">
+                ARQUIVO 001 / GOTHAM CITY
+            </span>
+
+            <h1>
+                THE
+                <span>DARK</span>
+                KNIGHT
+            </h1>
+
+            <p>
+                Explore o universo do Batman através de personagens,
+                inimigos, aliados, filmes e momentos marcantes.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#personagens" class="button primary">
+                    EXPLORAR ARQUIVOS
+                </a>
+
+                <button id="randomCharacter" class="button secondary">
+                    DOSSIÊ ALEATÓRIO ↗
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="hero-info">
+
+            <div>
+                <strong>1939</strong>
+                <span>PRIMEIRA APARIÇÃO</span>
+            </div>
+
+            <div>
+                <strong>GOTHAM</strong>
+                <span>BASE DE OPERAÇÕES</span>
+            </div>
+
+            <div>
+                <strong>08</strong>
+                <span>ARQUIVOS</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+        <div>
+            GOTHAM CITY // BATMAN // WAYNE // ARKHAM //
+            DETECTIVE // JUSTICE // GOTHAM CITY // BATMAN //
+        </div>
+    </div>
+
+
+    <!-- PERSONAGENS -->
+    <section id="personagens" class="section">
+
+        <div class="section-header">
+
+            <div>
+                <span class="eyebrow">DATABASE / 01</span>
+
+                <h2>
+                    PERSONAGENS
+                </h2>
+            </div>
+
+            <p>
+                Pesquise e filtre os principais personagens
+                do universo do Batman.
+            </p>
+
+        </div>
+
+
+        <!-- CONTROLES -->
+        <div class="controls">
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Pesquisar personagem..."
+                >
+
+            </div>
+
+            <div class="filters">
+
+                <button class="filter active" data-filter="all">
+                    TODOS
+                </button>
+
+                <button class="filter" data-filter="hero">
+                    ALIADOS
+                </button>
+
+                <button class="filter" data-filter="villain">
+                    VILÕES
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARDS -->
+        <div id="characters" class="character-grid"></div>
+
+    </section>
+
+
+    <!-- TIMELINE -->
+    <section id="timeline" class="section dark">
+
+        <div class="section-header">
+
+            <div>
+                <span class="eyebrow">DATABASE / 02</span>
+
+                <h2>
+                    LINHA DO TEMPO
+                </h2>
+            </div>
+
+            <p>
+                Alguns dos principais momentos da história
+                do Cavaleiro das Trevas.
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <article>
+                <span>1939</span>
+
+                <div>
+                    <h3>O início</h3>
+
+                    <p>
+                        Batman estreia em Detective Comics #27,
+                        criado por Bob Kane e Bill Finger.
+                    </p>
+                </div>
+            </article>
+
+
+            <article>
+                <span>1966</span>
+
+                <div>
+                    <h3>Televisão</h3>
+
+                    <p>
+                        A série estrelada por Adam West leva
+                        Batman para a televisão.
+                    </p>
+                </div>
+            </article>
+
+
+            <article>
+                <span>1989</span>
+
+                <div>
+                    <h3>Batman</h3>
+
+                    <p>
+                        Tim Burton apresenta uma nova versão
+                        cinematográfica do personagem.
+                    </p>
+                </div>
+            </article>
+
+
+            <article>
+                <span>2005</span>
+
+                <div>
+                    <h3>Batman Begins</h3>
+
+                    <p>
+                        Christopher Nolan reinicia a franquia
+                        mostrando a origem do herói.
+                    </p>
+                </div>
+            </article>
+
+
+            <article>
+                <span>2008</span>
+
+                <div>
+                    <h3>The Dark Knight</h3>
+
+                    <p>
+                        Batman enfrenta o Coringa em um dos
+                        filmes mais conhecidos da franquia.
+                    </p>
+                </div>
+            </article>
+
+
+            <article>
+                <span>2022</span>
+
+                <div>
+                    <h3>The Batman</h3>
+
+                    <p>
+                        Robert Pattinson interpreta uma versão
+                        mais jovem e investigativa do personagem.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- FILMES -->
+    <section id="filmes" class="section">
+
+        <div class="section-header">
+
+            <div>
+                <span class="eyebrow">DATABASE / 03</span>
+
+                <h2>
+                    FILMES
+                </h2>
+            </div>
+
+            <p>
+                Clique em um filme para abrir sua ficha.
+            </p>
+
+        </div>
+
+
+        <div class="movies">
+
+            <button class="movie-card" data-movie="Batman (1989)">
+                <span>1989</span>
+
+                <h3>BATMAN</h3>
+
+                <p>Tim Burton</p>
+
+                <strong>VER FICHA →</strong>
+            </button>
+
+
+            <button class="movie-card" data-movie="Batman Begins">
+                <span>2005</span>
+
+                <h3>BATMAN<br>BEGINS</h3>
+
+                <p>Christopher Nolan</p>
+
+                <strong>VER FICHA →</strong>
+            </button>
+
+
+            <button class="movie-card" data-movie="The Dark Knight">
+                <span>2008</span>
+
+                <h3>THE DARK<br>KNIGHT</h3>
+
+                <p>Christopher Nolan</p>
+
+                <strong>VER FICHA →</strong>
+            </button>
+
+
+            <button class="movie-card" data-movie="The Batman">
+                <span>2022</span>
+
+                <h3>THE<br>BATMAN</h3>
+
+                <p>Matt Reeves</p>
+
+                <strong>VER FICHA →</strong>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUIZ -->
+    <section id="quiz" class="quiz">
+
+        <div class="quiz-container">
+
+            <div>
+
+                <span class="eyebrow">
+                    INTERFACE / 04
+                </span>
+
+                <h2>
+                    TESTE SEU NÍVEL<br>
+                    DE DETETIVE
+                </h2>
+
+                <p>
+                    Qual é o verdadeiro nome do Batman?
+                </p>
+
+            </div>
+
+
+            <div class="answers">
+
+                <button data-answer="wrong">
+                    Harvey Dent
+                </button>
+
+                <button data-answer="correct">
+                    Bruce Wayne
+                </button>
+
+                <button data-answer="wrong">
+                    Dick Grayson
+                </button>
+
+                <button data-answer="wrong">
+                    James Gordon
+                </button>
+
+            </div>
+
+            <div id="quizResult"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div>
+            <strong>GOTHAM FILES</strong>
+
+            <p>
+                Projeto escolar de ADS
+            </p>
+        </div>
+
+        <div>
+            HTML • CSS • JAVASCRIPT
+        </div>
+
+    </footer>
+
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+
+        <div class="modal-background"></div>
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="close">
+                ×
+            </button>
+
+            <img id="modalImage" src="" alt="">
+
+            <div class="modal-info">
+
+                <span id="modalType" class="eyebrow"></span>
+
+                <h2 id="modalName"></h2>
+
+                <p id="modalDescription"></p>
+
+                <div id="modalTags" class="tags"></div>
+
+                <button id="favorite" class="button secondary">
+                    ☆ FAVORITAR
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
